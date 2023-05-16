@@ -1,0 +1,160 @@
+*{
+    transition: 0.5s ease;
+}
+
+/* *::-webkit-scrollbar{
+    display: none;
+} */
+
+.compareButtonBox{
+    position: fixed;
+    top: 40vh;
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(90deg, #ffffff, #feddff, #feddff, #fff);
+    box-shadow: 0 0 10px black;
+    cursor: pointer;
+    transition: 10s linear !important;
+}
+.compareButtonBox:hover{
+    box-shadow: 0 0 17px black;
+}
+
+.compare{
+    position: relative;
+    left: 50%;
+    border-radius: 10px;
+    background: none;
+    border: none;
+    box-shadow: none;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    padding: 10px;
+    top: 50%;
+    cursor: pointer;
+    transform: translate(-50%,-50%);
+}
+
+.compare:hover{
+    box-shadow: none;
+}
+
+.middleLine {
+    position: fixed;
+    background-color: black;
+    height: 100vh;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 3px;
+    box-shadow: 0 0 2px black;
+    top: 0px;
+}
+
+.background1{
+    position: fixed;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    width: 50vw;
+    height: 100vh;
+    background: linear-gradient(45deg, #4a4a4a, #949494, #bbbbbb, #ffffff);
+    overflow: auto; 
+}
+.background1::-webkit-scrollbar{
+    display: none;
+}
+
+.CookAtHomeTitle,
+.BuyFromOutsideTitle{
+    top: 40vh;
+    font-size: 1.5rem;
+    margin-bottom: 0px;
+}
+
+.background2{
+    position: fixed;
+    z-index: -1;
+    left: 50%;
+    top: 0;
+    width: 50vw;
+    height: 100vh;
+    background: linear-gradient(135deg, #ffffff, #a5a5a5, #7b7b7b, #848484);
+    overflow: auto;
+}
+.content::-webkit-scrollbar{
+    display: none;
+}
+
+
+
+.buttons{
+    background: linear-gradient(90deg, #ffffce, #fffffb, #fefff0, #fffed5);
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 30px;
+    border: none;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 5px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.content{
+    display: none;
+}
+
+input[type=checkbox] + label {
+    display: block;
+    margin: 0.2em;
+    cursor: pointer;
+    padding: 0.2em;
+    margin-left: 8vw;
+    font-size: 0.95rem;
+  }
+  
+  input[type=checkbox] {
+    display: none;
+  }
+  
+  input[type=checkbox] + label:before {
+    content: "\2714";
+    border: 0.1em solid #000;
+    border-radius: 0.2em;
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    padding-left: 0.2em;
+    padding-bottom: 0.3em;
+    margin-right: 0.2em;
+    vertical-align: bottom;
+    color: transparent;
+    transition: .2s;
+  }
+  
+  input[type=checkbox] + label:active:before {
+    transform: scale(0);
+  }
+  
+  input[type=checkbox]:checked + label:before {
+    background-color: MediumSeaGreen;
+    border-color: MediumSeaGreen;
+    color: #fff;
+  }
+  
+  input[type=checkbox]:disabled + label:before {
+    transform: scale(1);
+    border-color: #aaa;
+  }
+  
+  input[type=checkbox]:checked:disabled + label:before {
+    transform: scale(1);
+    background-color: #bfb;
+    border-color: #bfb;
+  }

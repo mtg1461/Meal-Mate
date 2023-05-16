@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+import MapPage from "./pages/mapPage";
+import WelcomePage from "./pages/WelcomePage";
+import ComparisonPage from "./pages/ComparisonPage";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+const App = () => {
+    return(
+        <div>
+            <BrowserRouter>
+             <Routes>
+                <Route index element={<MapPage />}/>
+                <Route path="/MapPage" element={<MapPage />}/>
+                <Route path="/WelcomePage" element={<WelcomePage />}/>
+                <Route path="/ComparisonPage" element={<ComparisonPage />}/>
+             </Routes>
+            </BrowserRouter>
+        </div>
+    )
 }
 
 export default App;

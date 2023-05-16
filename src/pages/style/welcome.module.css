@@ -1,0 +1,45 @@
+*{
+    font-family: sans-serif;
+}
+h1 {
+    position: relative;
+    text-align: center;
+}
+
+.box{
+    position: fixed;
+    width: 400px;
+    height: 200px;
+    padding: 40px;
+    background: linear-gradient(145deg, #aff2ff, #e3fffe, #c8f6ff);
+    box-shadow: 0 0 10px black;
+    border-radius: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 200px;
+    opacity: 60;
+}
+
+p {
+    position: relative;
+    text-align: center;
+    font-style: italic;
+}
+
+.getStartedButton {
+    border-radius: 10px;
+    background: linear-gradient(45deg, #ffb7b7, #ffe3e3, #ffc8c8);
+    border: none;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 0 5px;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.getStartedButton:hover{
+    box-shadow: 0 0 10px black;
+}
