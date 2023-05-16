@@ -48,6 +48,7 @@ const PlaceDetails = ({ place, selected, refProp, current }) => {
       setFoodUnusedIngredients(newString);
     }
   },[])
+  
   const displayYoutubeData = () => {
     setLoadMore(true)
     searchYouTube(place.title)
