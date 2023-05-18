@@ -267,7 +267,6 @@ const ComparisonPage = () => {
         setCurrentPage(1);
         pageChange(1, "");
     });
-    
 
     useEffect(() =>{
         if(navigator.geolocation){
